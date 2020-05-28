@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation project</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="author" content="Your name" />
+    <meta name="description" content="Brief description" />
+
+    <meta property="og:title" content="Your Page Title" />
+    <meta property="og:description" content="Brief description" />
+    <meta property="og:image" content="/some-image.png" />
+    <meta property="og:url" content="/this-page.html" />
+    <meta property="og:site_name" content="Your Site Name" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="image description" />
+
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+
+      <form id="signup-form">
+        <div class="row">
+          <div class="cell">
+            <label for="first-name">Full name:</label>
+            <input required type="text" id="first-name" autocomplete="name" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <label for="street-address">Street address</label>
+            <input
+              required
+              type="text"
+              id="street-address"
+              autocomplete="street-address"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <label for="email-address">Email address</label>
+            <input
+              required
+              type="email"
+              id="email-address"
+              autocomplete="email"
+            />
+          </div>
+          <div class="cell">
+            <label for="phone-number">Phone number</label>
+            <input required type="tel" id="phone-number" autocomplete="tel" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <label for="password">Password</label>
+            <input
+              required
+              type="password"
+              id="password"
+              autocomplete="new-password"
+            />
+          </div>
+          <div class="cell">
+            <label for="confirm-pass">Confirm Password</label>
+            <input
+              required
+              type="password"
+              id="confirm-pass"
+              autocomplete="new-password"
+            />
+          </div>
+        </div>
+
+        <div class="terms-wrapper">
+          <input type="checkbox" id="terms" value="agree" />
+          <label for="terms">
+            I agree to the <a href="/">terms of service</a>.
+          </label>
+        </div>
+
+        <div class="error-message"></div>
+
+        <footer>
+          <button class="clear">Clear</button>
+          <button class="submit">Submit</button>
+        </footer>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

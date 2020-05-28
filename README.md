@@ -1,4 +1,4 @@
-# Optional Mini Project: HTML Forms
+# Optional Workshop: HTML Forms
 
 In this project, you will be challenged to create a dynamic form.
 
