@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Signup Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Andrew/Ning">
+  <meta name="description" content="First pair coding project - signup form">
+  <meta property="og:title" content="The Form">
+  <meta property="og:description" content="A form">
+  <meta property="og:image" content="/some-image.png">
+  <meta property="og:url" content="/index.html">
+  <meta property="og:site_name" content="The Form site">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="image description">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <form class='myForm'>
+    <h1>Signup Form</h1>
+    <fieldset class='userInfo'>
+        <div>
+            <label class='label name' for='name'>Full name:</label>
+            <input type="text" class='inputbox' id='name' required>
+        </div>
+        <div>
+            <label class='label addr' for='addr'>Street address:</label>
+            <input type="text" class='inputbox' id='addr' required>
+        </div>
+        <div>
+            <label class='label email' for='email'>Email address:</label>
+            <input type="email" class='inputbox' id='email' required>
+        </div>
+        <div>
+            <label class='label phone' for='phone'>Phone number:</label>
+            <input type="tel" id='phone' name='phone' class='inputbox' required>
+        </div>
+        <div>
+            <label class='label password' for='password'>Password:</label>
+            <input type="password" class='inputbox' id='password' required>
+        </div>
+        <div>
+            <label class='label confirmedPW' for='confirmation'>Confirm password:</label>
+            <input type='password' id='confirmation' name='confirmation' class='inputbox' required>
+        </div>
+    </fieldset>
+    <fieldset class='agreement'>
+        <label class='checkboxContainer'>
+            <input type="checkbox" required>
+            <span class='checkmark'></span>
+            I agree to the <a href="#">terms of service.</a>
+        </label>
+    </fieldset>
+    <div class='alert'>
+        Your password is too short! Please provide a password that's at least 10 characters long
+    </div>
+    <fieldset class='btnArea'>
+        <input type="submit" value='Clear' class='btn clear'>
+        <input type="submit" value='Submit' class='btn submit'>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
