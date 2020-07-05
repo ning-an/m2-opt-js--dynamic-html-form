@@ -1,6 +1,12 @@
 # Pair Programming: HTML Forms
 > Concordia Optional Workshop
 
+## Demo
+
+[View Live](https://ning-an.github.io/m2-opt-js--dynamic-html-form/)
+
+# Description
+
 In this project, you will be challenged to create a dynamic form.
 
 Here's a screenshot:
