@@ -1,4 +1,5 @@
-# Optional Workshop: HTML Forms
+# Pair Programming: HTML Forms
+> Concordia Optional Workshop
 
 In this project, you will be challenged to create a dynamic form.
 
@@ -149,3 +150,11 @@ If the user's password is too short, suggest a random password for them:
 ![Password suggestion](./assets/suggestion.png)
 
 You can do this by creating a big list of nouns, and selecting 4-5 of them at random. You can use `Math.random()` to get a random number between 0 and 1, and `Math.round()` to round a decimal number.
+
+## Authors
+
+👤 **Ning An**
+👤 **Andrew Baldwin**
+
+- Github: [@andrewbaldwin44](https://github.com/andrewbaldwin44)
+- Github: [@ning-an](https://github.com/ning-an)

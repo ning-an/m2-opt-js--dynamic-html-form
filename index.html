@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <form class='myForm'>
+  <form class='myForm' id='form'>
     <h1>Signup Form</h1>
     <fieldset class='userInfo'>
         <div>
@@ -35,7 +35,7 @@
         </div>
         <div>
             <label class='label phone' for='phone'>Phone number:</label>
-            <input type="tel" id='phone' name='phone' class='inputbox' required>
+            <input type="tel" id='phone' name='phone' class='inputbox' required pattern="^\([0-9]{3}\)-[0-9]{3}\s[0-9]{4}" placeholder="(012)-345 6789">
         </div>
         <div>
             <label class='label password' for='password'>Password:</label>
@@ -48,17 +48,16 @@
     </fieldset>
     <fieldset class='agreement'>
         <label class='checkboxContainer'>
-            <input type="checkbox" required>
+            <input type="checkbox" id='checkbox'>
             <span class='checkmark'></span>
             I agree to the <a href="#">terms of service.</a>
         </label>
     </fieldset>
-    <div class='alert'>
-        Your password is too short! Please provide a password that's at least 10 characters long
+    <div class='password-alert' id='passwordAlert'>
     </div>
     <fieldset class='btnArea'>
-        <input type="submit" value='Clear' class='btn clear'>
-        <input type="submit" value='Submit' class='btn submit'>
+        <input type="reset" value='Clear' class='btn clear'>
+        <input type="submit" value='Submit' class='btn submit' id='submit'>
     </fieldset>
   </form>
   <script src="script.js"></script>
